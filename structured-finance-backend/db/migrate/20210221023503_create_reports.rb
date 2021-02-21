@@ -5,7 +5,7 @@ class CreateReports < ActiveRecord::Migration[6.0]
       t.string :report_link
       t.datetime :report_date
       t.string :rating_agency
-      t.references :transaction, null: false, foreign_key: true
+      t.references :deal, null: false, foreign_key: true
 
       t.timestamps
     end
