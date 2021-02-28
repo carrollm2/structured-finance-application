@@ -1,3 +1,10 @@
 export default function dealReducer(state={deals: []}, action){
-    return state
+
+    switch (action.type){
+        case 'FETCH_DEALS':
+            return {deals: action.payload}
+        default:
+            return state
+    }
+
 }
