@@ -12,7 +12,7 @@ import dealReducer from './reducers/dealReducer';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 
-let store = createStore(dealReducer, compose(applyMiddleware(thunk)));
+let store = createStore(dealReducer, composeEnhancers(applyMiddleware(thunk)));
 
 
 ReactDOM.render(
