@@ -1,13 +1,47 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import {addDeal} from '../actions/addDeal'
 
 class DealInput extends React.Component{
+
+    state = {ticker: '',
+        series: '', 
+        asset_class: ''
+    };
+
+
+    handleOnChange = (event) => {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
+    handleOnSubmit = (event) => {
+        event.preventDefault();
+        this.props.addDeal(this.state);
+    }
+
     render (){
         return (
             <div>
-                DealInput
+                <form onSubmit={this.handleOnSubmit}>
+                    <label>Ticker: </label>
+                    <input type='text' placeholder='Ticker' value ={this.state.ticker} name="ticker" onChange={this.handleOnChange}/>
+                    <br></br>
+                    <br></br>
+                    <label>Series: </label>
+                    <input type='text' placeholder='Series' value ={this.state.series} name="series" onChange={this.handleOnChange}/>
+                    <br></br>
+                    <br></br>
+                    <label>Asset Class: </label>
+                    <input type='text' placeholder='Asset Class' value ={this.state.asset_class} name="asset_class" onChange={this.handleOnChange}/>
+                    <br></br>
+                    <br></br>
+                    <input type='submit' />
+                </form>
             </div>
         )
     }
 }
 
-export default DealInput
+export default connect(null, {addDeal})(DealInput)
