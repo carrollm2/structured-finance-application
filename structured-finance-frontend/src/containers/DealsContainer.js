@@ -13,6 +13,8 @@ class DealsContainer extends React.Component{
         return (
             <div>
                 <DealInput />
+                <br></br>
+                <br></br>
                 <Deals deals={this.props.deals}/>
             </div>
         )
