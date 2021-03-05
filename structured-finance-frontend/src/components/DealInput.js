@@ -19,6 +19,11 @@ class DealInput extends React.Component{
     handleOnSubmit = (event) => {
         event.preventDefault();
         this.props.addDeal(this.state);
+        this.setState({
+            ticker: '',
+            series: '',
+            asset_class: ''
+        })
     }
 
     render (){
