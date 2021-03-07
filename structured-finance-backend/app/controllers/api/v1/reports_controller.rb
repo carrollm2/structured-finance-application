@@ -15,7 +15,7 @@ class Api::V1::ReportsController < ApplicationController
     def create 
         @report = @deal.reports.build(report_params)
         if @report.save
-            render json: @report
+            render json: @deal
         else
             render json: {
                 error: "Error creating new report for deal",
