@@ -5,6 +5,15 @@ export default function dealReducer(state={deals: []}, action){
             return {deals: action.payload}
         case 'ADD_DEAL':
             return {...state, deals: [...state.deals, action.payload]}
+        case 'ADD_REPORT':
+            let deals = state.deals.map(deal => {
+                if (deal.id === action.payload.id){
+                    return action.payload
+                } else {
+                    return deal
+                }                
+            })
+            return {...state, deals: deals}     
         default:
             return state
     }
