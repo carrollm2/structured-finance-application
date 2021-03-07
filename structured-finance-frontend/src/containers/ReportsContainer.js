@@ -8,8 +8,8 @@ class ReportsContainer extends React.Component{
     render(){
         return (
             <div>
-                <ReportInput />
-                <Reports deals={this.props.deal && this.props.deal.reports}/>
+                <ReportInput deal={this.props.deal}/>
+                <Reports reports={this.props.deal && this.props.deal.reports}/>
             </div>
         )
     }
