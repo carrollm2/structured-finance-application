@@ -25,7 +25,10 @@ class Api::V1::ReportsController < ApplicationController
     end
 
     def destroy
-
+        @report = Report.find_by_id(params[:id])
+        @deal = Deal.find_by_id(params[:deal_id])
+        @report.destroy
+        render json: @deal
     end
 
     private 
