@@ -12,12 +12,7 @@ import DealsContainer from './containers/DealsContainer'
 class App extends React.Component{
 
   render(){
-    // return (
-    //   <div className="App">
-    //     <Navbar />
-    //     <DealsContainer />
-    //   </div>
-    // );
+
     return (
       <>
         <Router>

@@ -76,6 +76,7 @@
     }
 
     .nav-menu.active {
+        height: 1000px;
         background: #6668f4;
         left: 0;
         opacity: 1;
