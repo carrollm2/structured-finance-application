@@ -18,10 +18,12 @@
     cursor: pointer;
 }
 
-.fa-react {
+
+.fas fa-chart-line  {
     margin-left: 0.5rem;
     font-size: 1.6rem;
 }
+
 
 .nav-menu {
     display: grid;
@@ -60,7 +62,7 @@
 
 @media screen and (max-width: 960px){
     .NavbarItems {
-        position: relative;
+        position: sticky;
     }
 
     .nav-menu {
@@ -139,7 +141,8 @@
         transition: 250ms;
     }
 
-    Button {
+
+    button.btn.btn--primary.btn-medium{
         display: none;
     }
 

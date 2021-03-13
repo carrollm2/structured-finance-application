@@ -15,7 +15,7 @@ class Navbar extends React.Component{
     render(){
         return (
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">React<i className="fab fa-react"></i></h1>
+                <h1 className="navbar-logo"> The Wa<i class="fas fa-chart-line"></i></h1>
                 <div className="menu-icon" onClick={this.handleOnClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
 
