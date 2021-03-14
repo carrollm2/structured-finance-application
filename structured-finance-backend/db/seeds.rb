@@ -21,4 +21,4 @@ deal_2.reports.build(category: "Pre-Sale", report_link: "https://www.krollbondra
 
 deal_3 = Deal.create(ticker: 'WFMBS', series: '21-1', 'asset_class': 'rmbs')
 deal_3.reports.build(category: "Pre-Sale", report_link: "https://www.krollbondratings.com/documents/report/45047/wells-fargo-mortgage-backed-securities-2021-1-trust-wfmbs-2021-1-pre-sale-report", rating_agency: "Kroll", report_date: DateTime.new(2021, 03, 8)).save
-eal_3.reports.build(category: "Press Release", report_link: "https://www.krollbondratings.com/documents/press-release/34687/kbra-assigns-preliminary-ratings-to-wells-fargo-mortgage-backed-securities-trust-2021-1-wfmbs-2021-1", rating_agency: "Kroll", report_date: DateTime.new(2021, 03, 8)).save
+deal_3.reports.build(category: "Press Release", report_link: "https://www.krollbondratings.com/documents/press-release/34687/kbra-assigns-preliminary-ratings-to-wells-fargo-mortgage-backed-securities-trust-2021-1-wfmbs-2021-1", rating_agency: "Kroll", report_date: DateTime.new(2021, 03, 8)).save
