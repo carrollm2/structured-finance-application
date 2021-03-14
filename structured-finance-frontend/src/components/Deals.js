@@ -3,7 +3,6 @@ import {Route, Link} from 'react-router-dom';
 import Deal from './Deal';
 import CardItem from './Card/CardItem'
 import './Card/Cards.css'
-import {Button} from './Button/Button.js'
 
 
 const Deals = (props) => {
