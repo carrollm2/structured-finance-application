@@ -10,6 +10,7 @@ export const addDeal = (data) => {
         })
         .then(response => response.json())
         .then(deal => dispatch({type: 'ADD_DEAL', payload: deal}))
+        .catch(error => alert(error.message));
     }
 
 }
