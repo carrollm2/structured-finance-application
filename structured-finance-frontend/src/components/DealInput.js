@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {addDeal} from '../actions/addDeal'
+import './App.css'
 
 class DealInput extends React.Component{
 
@@ -30,6 +31,7 @@ class DealInput extends React.Component{
         return (
             <div>
                 <form onSubmit={this.handleOnSubmit}>
+                    <br></br>
                     <label>Ticker: </label>
                     <input type='text' placeholder='Ticker' value ={this.state.ticker} name="ticker" onChange={this.handleOnChange}/>
                     <br></br>
