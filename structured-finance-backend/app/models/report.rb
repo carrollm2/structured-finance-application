@@ -1,6 +1,6 @@
 class Report < ApplicationRecord
   belongs_to :deal
 
-  validates_inclusion_of :category, :in => ['pre-sale']
-  validates_inclusion_of :rating_agency, :in => ['moodys', 'standard_poors', 'fitch', 'kroll']
+  validates_inclusion_of :category, :in => ['Pre-Sale', 'Downgrade', 'Press Release']
+  validates_inclusion_of :rating_agency, :in => ['Moodys', 'Standard Poors', 'Fitch', 'Kroll']
 end

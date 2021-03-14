@@ -35,26 +35,35 @@ class ReportInput extends React.Component{
         return (
             <div>
                 <form onSubmit={this.handleOnSubmit}>
-                    <label>Report Category:</label>
+                    <h2> Add New Report</h2>
+                    <br></br>
+                    <label>Report Category: </label>
                     <select name="category" value={this.state.category} onChange={this.handleOnChange}>
+                        <option></option>
                         <option>Pre-Sale</option>
                         <option>Downgrade</option>
+                        <option>Press Release</option>
                     </select>
-
-                    <label>Report Link:</label>
+                    <br></br>
+                    <br></br>
+                    <label>Report Link: </label>
                     <input type="text" name="report_link" value={this.state.report_link} onChange={this.handleOnChange} />
-
-                    <label>Report Date:</label>
-                    <input type="text" name="report_date" value={this.state.report_date} onChange={this.handleOnChange} />
-  
-                    <label>Rating Agency:</label>
+                    <br></br>
+                    <br></br>
+                    <label>Report Date: </label>
+                    <input type="date" name="report_date" value={this.state.report_date} onChange={this.handleOnChange} />
+                    <br></br>
+                    <br></br>
+                    <label>Rating Agency: </label>
                     <select name="rating_agency" value={this.state.rating_agency} onChange={this.handleOnChange}>
+                        <option></option>
                         <option>Moodys</option>
                         <option>Standard Poors</option>
                         <option>Fitch</option>
                         <option>Kroll</option>
                     </select>
-
+                    <br></br>
+                    <br></br>
                     <input type="submit" />
 
                 </form>       
