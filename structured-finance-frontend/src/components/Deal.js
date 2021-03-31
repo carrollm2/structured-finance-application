@@ -8,7 +8,6 @@ import './App.css'
 const Deal = (props) => {
 
     let deal = props.deals[props.match.params.id - 1]
-    // let deal = props.deals.filter(deal => deal.id === props.match.params.id)[0]
 
     return (
         <>
