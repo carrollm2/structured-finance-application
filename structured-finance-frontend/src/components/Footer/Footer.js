@@ -3,7 +3,8 @@ import {Button} from '../Button/Button.js'
 import {Link} from 'react-router-dom';
 import './Footer.css'
 
-function Footer(){
+
+const Footer = () => {    
     return (
         <div className='footer-container'>
             <section className='footer-subscription'>
